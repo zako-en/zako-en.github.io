@@ -7,7 +7,7 @@ html{
 body{
   font-family:"Papyrus";
   line-height: 1.7;
-  background-color: #7fd9d2; 
+  background-color: #7fd9d2;
        color: #432;
 
 }
@@ -127,11 +127,21 @@ h1{
 	}
 }
 
-
-.item{
+.container{
   display: grid;
-  gap: 26px;
   grid-template-columns: 1fr 1fr;
+  gap: 26px;
   margin-top: 6%;
   margin-bottom: 50px;
+}
+.item{
+  position: relative;
+}
+
+.item p{
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 0;
+  left: 0;
 }
