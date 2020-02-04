@@ -1,0 +1,155 @@
+@charaset"UTF-8";
+/* 共通*/
+
+html{
+  font-size: 100%;
+}
+body{
+  font-family:"Papyrus";
+  line-height: 1.7;
+  background-color: #7fd9d2;
+       color: #432;
+
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/*HEADER*/
+h1{
+  width: 600px;
+  margin-top: 14px;
+  font-size: 40PX;
+}
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: #432;
+}
+.main-nav a:hover{
+  color: #0bd;
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #7fd9d2;
+}
+.wrapper{
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/*image*/
+.album {
+	margin: auto;
+	background-color: white;
+	position: relative;
+}
+
+.album img {
+  background-size: cover;
+	animation-name: album;
+	-webkit-animation-name: album;
+	animation-duration: 23s;
+	-webkit-animation-duration: 23s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+.album .img1 {
+	display: block;
+	margin: 0 auto;
+}
+.album .img2 {
+  animation-delay:8s;
+  -webkit-animation-delay:8s;
+  position: absolute;
+  top: 0;
+}
+.album .img3 {
+  animation-delay:13s;
+	-webkit-animation-delay:13s;
+	position: absolute;
+	top: 0;
+}
+
+.album .img4 {
+	animation-delay:18s;
+	-webkit-animation-delay:18s;
+	position: absolute;
+	top: 0;
+}
+
+@keyframes album {
+	0% {
+		opacity: 0;
+	}
+
+	12.5% {
+		opacity: 1;
+	}
+
+	37.5% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes album {
+	0% {
+		opacity: 0;
+	}
+
+	12.5% {
+		opacity: 1;
+	}
+
+	37.5% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+.img{
+   border-radius:  60px;
+}
+.item{
+  position: relative;
+}
+
+.item p{
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 0;
+  left: 20px;
+}
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #786c6c;
+}
